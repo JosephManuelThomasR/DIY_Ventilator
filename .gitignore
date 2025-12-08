@@ -1,0 +1,31 @@
+# Arduino build files
+*.elf
+*.hex
+*.bin
+*.eep
+*.map
+*.obj
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+
+# Arduino IDE specific
+*.apj
+*.build
+*.cache
+*.metadata
+
+# PlatformIO
+.pio/
+.arduino/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Libraries (optional: ignore if you include them in repo)
+# /libraries/
