@@ -1,0 +1,40 @@
+DIY Ventilator - NodeMCU ESP8266 + JHD204A 20x4 LCD + MG995 Servo + DHT11 + MAX30100
+
+1) Power:
+   - Breadboard power module: 5V and GND rails
+   - NodeMCU VIN -> 5V rail
+   - NodeMCU GND -> GND rail
+   - Servo V+ -> 5V rail, GND -> GND rail, Signal -> D4
+
+2) LCD (20x4 parallel 4-bit):
+   - VCC -> 5V
+   - GND -> GND
+   - V0 -> 10k pot (middle) for contrast
+   - RS -> D1
+   - EN -> D2
+   - D4 -> D3
+   - D5 -> D4
+   - D6 -> D5
+   - D7 -> D6
+   - RW -> GND
+   - LED A -> 5V via 220Ω
+   - LED K -> GND
+
+3) Buttons:
+   - Setting -> D7, GND
+   - Start -> D8, GND
+
+4) LEDs:
+   - Red -> D5 via 220Ω -> GND
+   - Green -> D6 via 220Ω -> GND
+
+5) DHT11:
+   - VCC -> 3.3V
+   - GND -> GND
+   - DATA -> D3 (optional 10k pull-up)
+
+6) MAX30100:
+   - VIN -> 3.3V
+   - GND -> GND
+   - SDA -> D2
+   - SCL -> D1
